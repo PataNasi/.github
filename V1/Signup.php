@@ -29,7 +29,7 @@ if (isset($_POST['register'])) { // Changed 'signup' to 'register'
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V1</title>
+	<title>Signup V1</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -53,15 +53,18 @@ if (isset($_POST['register'])) { // Changed 'signup' to 'register'
 	
 <!--Signup-->	
 <div class="limiter" id="Signupform">
-  
-  </style>
+    <style>
+        #Signupform {
+            display: block;
+        }
+    </style>
   <div class="container-login100">
       <div class="wrap-login100">
           <div class="login100-pic js-tilt" data-tilt>
               <img src="images/img-01.png" alt="IMG">
           </div>
 
-          <form class="login100-form validate-form" action="Signup.php" method="POST">
+         <form class="login100-form validate-form" action="Signup.php" method="POST">
               <span class="login100-form-title">
                   Sign Up
               </span>
@@ -127,6 +130,14 @@ if (isset($_POST['register'])) { // Changed 'signup' to 'register'
                       Sign Up
                   </button>
               </div>
+              
+					<div class="text-center p-t-136">
+						<a class="txt2" href="Login.php">
+							Login to your Account
+							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+						</a>
+					</div>
+
               
           </form>
       </div>
